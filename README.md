@@ -7,7 +7,7 @@ Using MicroPython on an ESP32, the included code manages a network connection wi
 
 ### Hardware Used
 - **LOLIN D32 V1.0.0 (ESP32)**
-- **LCD1602**
+- **LCD1602** (x9)
 - **BC337 Transistors**
 
 <p align="center">
