@@ -6,9 +6,9 @@ Using MicroPython on an ESP32, the included code manages a network connection wi
 </p>
 
 ### Hardware Used
-- LOLIN D32 V1.0.0 (ESP32)
-- LCD1602
-- BC337 Transistors
+- **LOLIN D32 V1.0.0 (ESP32)**
+- **LCD1602**
+- **BC337 Transistors**
 
 <p align="center">
   <img src="images/circuit-small.jpg" />
@@ -16,12 +16,12 @@ Using MicroPython on an ESP32, the included code manages a network connection wi
 
 
 ### Custom modules and their source links
-- [LCD](https://github.com/rdagger/micropython-charlcd)
-- [uping](https://gist.github.com/shawwwn/91cc8979e33e82af6d99ec34c38195fb)
+- **[LCD](https://github.com/rdagger/micropython-charlcd)**
+- **[uping](https://gist.github.com/shawwwn/91cc8979e33e82af6d99ec34c38195fb)**
 
 ### Notes on some of the internal modules used
-- urequest module is used to manage communication with the NextCloud Talk API
-- ubinascii module is required for managing encryption of username and password
+- **urequest** is used to manage communication with the NextCloud Talk API
+- **ubinascii** is required for managing encryption of username and password
 
 The following curl commands are useful for initial testing of the chat server. Open a Linux terminal and follow the given instruction to make sure we have basic send and receive working.
 
