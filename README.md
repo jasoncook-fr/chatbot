@@ -33,6 +33,8 @@ At the moment the bot connects to the dedicated NextCloud chatroom, it will send
 Commands are also prepared for the chatbot. To send a command, simply begin the message with dollar sign. To get a list of available commands simply type $help.
 
 <br/>
+### Chatroom Debugging
+
 The following curl commands are useful for initial testing of the chat server. Open a Linux terminal and follow the given instruction to make sure we have basic send and receive working.
 
 ```bash
