@@ -10,7 +10,10 @@ Using MicroPython on an ESP32, the included code manages a network connection wi
 - LCD1602
 - BC337 Transistors
 
-![circuit](images/circuit.jpg)
+<p align="center">
+  <img src="images/circuit-small.jpg" />
+</p>
+
 
 ### Custom modules and their source links
 - [LCD](https://github.com/rdagger/micropython-charlcd)
