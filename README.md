@@ -3,6 +3,10 @@ Using MicroPython on an ESP32, the included code manages a network connection wi
 
 ![screens](images/screens-small.jpg)
 
+<p align="center">
+  <img src="images/screens-small.jpg" />
+</p>
+
 ### Hardware Used
 - LOLIN D32 V1.0.0 (ESP32)
 - LCD1602
