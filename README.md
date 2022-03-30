@@ -23,8 +23,12 @@ Using MicroPython on an ESP32, the included code manages a network connection wi
 - **urequest** is used to manage communication with the NextCloud Talk API
 - **ubinascii** is required for managing encryption of username and password
 
+### Required code modifications
+- **main.py** : credentials for your nextcloud server must be provided (url, username, password, chatroom token)
+- **netconn.py** : credentials for local routers are required (SSID, password). This is prepared as a list, in case you wish to test multiple routers.
+
 ### Code usage and behavior
-All included code must be uploaded to the ESP32 in order to run **main.py** . The device must be configured with the SSID and password of a local router. These settings are found in the **netconn.py** code. When the device boots, it will connect to the router and announce on the LCD display that it is connecting to the network. Once it has connected, it will then begin an animated sequence of the multiple displays. The code **dictionary.py** provides a list of messages that will be randomly displayed on the screens. This is the default sequence. <br/>
+All included code must be uploaded to the ESP32 in order to run **main.py** . When the device boots, it will connect to the router and announce on the LCD display that it is connecting to the network. Once it has connected, it will then begin an animated sequence of the multiple displays. The code **dictionary.py** provides a list of messages that will be randomly displayed on the screens. This is the default sequence. <br/>
 At the moment the bot connects to the dedicated NextCloud chatroom, it will send a chat message to notify chat users that it is online. It will then await the next message. If the message sent is under 32 characters length, it will then be analyzed and cut for compatibility with the 16x2 display. If all goes well, the chatbot will respond with a chat to verify success. If something goes wrong, the chatbot will respond and describe the error.<br/>
 Commands are also prepared for the chatbot. To send a command, simply begin the message with dollar sign. To get a list of available commands simply type $help.
 
