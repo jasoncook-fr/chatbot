@@ -1,7 +1,7 @@
 ## ESP32 NextCloud chatbot 
 Using MicroPython on an ESP32, the included code manages a network connection with a remote NextCloud server. The device signs in as a predefined user in order to send and receive messages in a dedicated chatroom. The application which manages the chat session is Nextcloud Talk. Any new message received in the chatroom will be analyzed, processed and displayed an LCD1602 display. For creativity purposes, I added 9 of these displays. The same message is shown on all of them. The backlight on each display however is individually activated by different pins on the ESP32. An animation code is included to illustrate multiple sequences that were prepared. This done electronically by sending PWM signals to a network of a BC337 transistors, one for each screeen. 
 
-![screens](images/screens.jpg)
+![screens](images/screens.jpg | width=100)
 
 ### Hardware Used
 - LOLIN D32 V1.0.0 (ESP32)
