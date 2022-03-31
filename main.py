@@ -192,7 +192,7 @@ while True:
                         helpMsg = "available commands: \n" + cmdList + "\n"
                         lastKnownMessageId = sendChatMsg(helpMsg)
                     elif cmd is "IP":
-                        ipMsg = "My local IP is: " + myIP + "\n" + "repl password is 'omuts' \n"
+                        ipMsg = "My local IP is: " + myIP + "\n" + "repl password is 'myPassword' \n"
                         lastKnownMessageId = sendChatMsg(ipMsg)
                     else:
                         cmdFlag = True
